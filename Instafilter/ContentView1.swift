@@ -25,7 +25,7 @@ struct ContentView1: View {
             
             Slider(value: $blurAmount, in: 0...20)
             // didSet حالت اسلایدر رو حساب نمیکنه که باید از یه ویرایشگر دیگه استفاده کرد
-                .onChange(of: blurAmount){ newVale in
+                .onChange(of: blurAmount ){ newVale in
                     print("New value is \(newVale)")
                     // میتونی این onChange  رو بیرون VStack بذاری
                     

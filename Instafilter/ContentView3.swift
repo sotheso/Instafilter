@@ -23,7 +23,7 @@ struct ContentView3: View {
             .confirmationDialog("Change backgrand", isPresented: $showingConfirmation){
                 Button("Red") {backgrandColor = .red}
                 Button("Blue") {backgrandColor = .blue}
-                Button("Green") {backgrandColor = .green}
+                Button("black") {backgrandColor = .black}
                 Button("Cancel", role: .cancel) { }
             } message: {
                 Text("Select a new Color")
